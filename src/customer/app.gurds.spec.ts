@@ -20,7 +20,7 @@ describe('AuthGuard', () => {
     expect(authGuard).toBeDefined();
   });
 
-  it('should be canActivate', async () => {
+  it('should be canActivate', async () => { 
     expect(authGuard.canActivate(context)).toBeDefined();
   });
 });

@@ -2,9 +2,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) 
-
-API Customer 
+[Nest](https://github.com/nestjs/nest) API Customer .
 
 ## Installation
 
@@ -35,7 +33,6 @@ username=<seu_email>
 password=<base64_de_seu_email>
 scope=openid
 ```
-
 Customer
 
 GET
@@ -43,6 +40,7 @@ GET
 GET http://localhost:3000/customers/1
 Content-Type: application/json; charset=utf-8
 Authorization: Bearer <TOKEN>
+
 
 Response
 {
@@ -57,6 +55,7 @@ Response
    ]
 }
 ```
+
 POST
 ```bash
 POST http://localhost:3000/customers

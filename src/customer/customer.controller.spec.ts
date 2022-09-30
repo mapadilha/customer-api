@@ -27,9 +27,7 @@ req.headers['Authorization'] = 'Bearer hshgaagf';
 describe('CustomerController', () => {
   let controller: CustomerController;
   let tokenValidationService: TokenValidationService;
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let customerService: CustomerService;
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let authGuards: AuthGuard;
 
   beforeEach(async () => {
@@ -62,11 +60,6 @@ describe('CustomerController', () => {
   it('should be defined', async () => {
     expect(controller).toBeDefined();
   });
-
-  // it('should be getById exception', () => {
-  //   controller.getById('', req);
-  //   expect(tokenValidationService.validate).not.toHaveBeenCalled();
-  // });
 
   it('should be getById success', async () => {
     tokenValidationService.validate = jest.fn().mockResolvedValue(true);
